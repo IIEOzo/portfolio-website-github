@@ -23,9 +23,9 @@ const Home: React.FC = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gray-100">
+    <div className="min-h-screen bg-gray-100 pt-16">
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-blue-600 to-indigo-700 text-white py-20 px-4 md:px-8">
+      <section id="home" className="bg-gradient-to-r from-blue-600 to-indigo-700 text-white py-20 px-4 md:px-8">
         <div className="container mx-auto text-center">
           <h1 className="text-4xl md:text-6xl font-bold mb-6">Hello, I'm a Developer</h1>
           <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">
