@@ -5,9 +5,6 @@ compatibility_date = "2024-01-01"
 # Pages 构建配置
 pages_build_output_dir = "dist"
 
-[build]
-command = "npm run build"
-
 # 环境变量配置
 [env.production]
 name = "portfolio-website"
