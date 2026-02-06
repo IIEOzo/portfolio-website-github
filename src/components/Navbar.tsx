@@ -17,6 +17,7 @@ const Navbar: React.FC = () => {
         <div className="hidden md:flex space-x-10 items-center">
           <a href="#home" className="hover:text-gray-300 transition-colors duration-300">首页</a>
           <a href="#about" className="hover:text-gray-300 transition-colors duration-300">关于</a>
+          <a href="#contact" className="hover:text-gray-300 transition-colors duration-300">联系</a>
           <a href="#footer" className="hover:text-gray-300 transition-colors duration-300">页脚</a>
         </div>
 
@@ -54,6 +55,13 @@ const Navbar: React.FC = () => {
               onClick={() => setIsMenuOpen(false)}
             >
               关于
+            </a>
+            <a 
+              href="#contact" 
+              className="hover:text-gray-300 transition-colors duration-300"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              联系
             </a>
             <a 
               href="#footer" 
