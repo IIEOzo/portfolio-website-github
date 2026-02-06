@@ -3,6 +3,7 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Home from './pages/Home';
 import About from './pages/About';
+import Services from './pages/Services';
 import './App.css';
 
 function App() {
@@ -13,7 +14,7 @@ function App() {
     <div className="min-h-screen flex flex-col">
       <Navbar />
       <main className="flex-grow">
-        {path === '/about' ? <About /> : <Home />}
+        {path === '/about' ? <About /> : path === '/services' ? <Services /> : <Home />}
       </main>
       <Footer />
     </div>
