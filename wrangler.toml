@@ -8,27 +8,23 @@ pages_build_output_dir = "dist"
 [build]
 command = "npm run build"
 
-# 路由配置
-[[routes]]
-pattern = "/*"
-
 # 环境变量配置
 [env.production]
 name = "portfolio-website"
 
 # R2 存储桶配置
-[[r2_buckets]]
+[[env.production.r2_buckets]]
 binding = "PORTFOLIO_ASSETS"
 bucket_name = "portfolio-assets"
 
 # KV 命名空间配置
-[[kv_namespaces]]
+[[env.production.kv_namespaces]]
 binding = "PORTFOLIO_KV"
 id = "c833647fbf984c8b8e75543e09f39f7b"
 preview_id = "c833647fbf984c8b8e75543e09f39f7b"
 
 # D1 数据库配置
-[[d1_databases]]
+[[env.production.d1_databases]]
 binding = "PORTFOLIO_DB"
 database_name = "portfolio-db"
 database_id = "9b24ce44-0725-4cf9-8c78-5f8bd0d036e5"
