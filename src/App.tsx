@@ -1,22 +1,29 @@
 
-import Navbar from './components/Navbar';
+import Navbar from './components/layout/Navbar';
 import Footer from './components/Footer';
 import Home from './pages/Home';
 import About from './pages/About';
-import Services from './pages/Services';
 import './App.css';
 
 function App() {
-  // Simple routing based on path
-  const path = window.location.pathname;
-
   return (
     <div className="min-h-screen flex flex-col">
       <Navbar />
-      <main className="flex-grow">
-        {path === '/about' ? <About /> : path === '/services' ? <Services /> : <Home />}
-      </main>
-      <Footer />
+      
+      {/* 首页锚点 */}
+      <section id="home" className="min-h-screen">
+        <Home />
+      </section>
+      
+      {/* 关于锚点 */}
+      <section id="about" className="min-h-screen py-20">
+        <About />
+      </section>
+      
+      {/* 页脚锚点 */}
+      <footer id="footer" className="bg-gray-900 text-white py-20">
+        <Footer />
+      </footer>
     </div>
   );
 }
